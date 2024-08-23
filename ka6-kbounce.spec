@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.05.2
+%define		kdeappsver	24.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kbounce
 Summary:	Kbounce
 Name:		ka6-%{kaname}
-Version:	24.05.2
+Version:	24.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	1f2e3d46363eb86ad98105d4d69be91f
+# Source0-md5:	b9cb0f77b19470da0b3403c12a4a5b3a
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -95,3 +95,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kbounce
 %{_datadir}/metainfo/org.kde.kbounce.appdata.xml
 %{_datadir}/qlogging-categories6/kbounce.categories
+%{_datadir}/qlogging-categories6/kbounce.renamecategories
